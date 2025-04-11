@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BundesligaApp</string>
+    <string name="bundesliga">Bundesliga</string>
+    <string name="willkommen">Willkommen!</string>
+    <string name="about_league">About league:</string>
+    <string name="more_info">Tap for more</string>
+    <string name="team_name">Team name</string>
+    <string name="stadium_name">Stadium name</string>
+    <string name="city_label">City: %s</string>
+    <string name="stadium_label">Stadium: %s</string>
+
+    <!--Fragments Labels-->
+    <string name="home_fragment">Home</string>
+    <string name="teams_fragment">Teams</string>
+    <string name="stadiums_fragment">Stadiums</string>
+
+    <!--League description-->
+    <string name="league_description">The Bundesliga is the top professional football division in Germany, founded in 1963. It is one of the five major European leagues and runs from August to May. Bayern Munich is the most successful club with 33 titles. Some of the most important classics include "Der Klassiker" (Bayern vs Dortmund) and "Revierderby" (Dortmund vs Schalke 04). The Bundesliga is known for its rich history, competitiveness, and passionate fan base.</string>
+</resources>
