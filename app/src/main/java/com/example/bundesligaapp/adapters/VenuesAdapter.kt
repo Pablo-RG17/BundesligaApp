@@ -11,6 +11,7 @@ import com.example.bundesligaapp.pojo.Venue
 class VenuesAdapter() : RecyclerView.Adapter<VenuesAdapter.VenuesViewHolder>() {
 
     private var venuesList = ArrayList<Venue>()
+    lateinit var onItemClick: (Venue) -> Unit
 
     fun setVenueList(venueList: List<Venue>) {
         this.venuesList = venueList as ArrayList<Venue>
@@ -27,15 +28,18 @@ class VenuesAdapter() : RecyclerView.Adapter<VenuesAdapter.VenuesViewHolder>() {
 
     override fun onBindViewHolder(holder: VenuesViewHolder, position: Int) {
 
-        val teamsListPosition = venuesList[position]
+        val venue = venuesList[position]
 
         Glide.with(holder.itemView)
-            .load(teamsListPosition.strThumb)
+            .load(venue.strThumb)
             .placeholder(R.drawable.ic_placeholder)
             .into(holder.binding.ivVenueImage)
 
-        holder.binding.tvVenueName.text = teamsListPosition.strVenue
+        holder.binding.tvVenueName.text = venue.strVenue
 
+        holder.itemView.setOnClickListener {
+            onItemClick(venue)
+        }
     }
 
     override fun getItemCount() = venuesList.size

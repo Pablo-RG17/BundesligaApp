@@ -15,6 +15,9 @@
         android:theme="@style/Theme.BundesligaApp"
         tools:targetApi="31">
         <activity
+            android:name=".activities.VenueActivity"
+            android:exported="false" />
+        <activity
             android:name=".activities.TeamActivity"
             android:exported="false" />
         <activity

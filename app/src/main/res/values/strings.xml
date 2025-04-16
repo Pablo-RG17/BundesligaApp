@@ -8,6 +8,7 @@
     <string name="stadium_name">Stadium name</string>
     <string name="city_label">City: %s</string>
     <string name="stadium_label">Stadium: %s</string>
+    <string name="capacity_label">Capacity: %s</string>
 
     <!--Fragments Labels-->
     <string name="home_fragment">Home</string>
