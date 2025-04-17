@@ -7,12 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.bundesligaapp.activities.TeamActivity
 import com.example.bundesligaapp.adapters.TeamsAdapter
 import com.example.bundesligaapp.databinding.FragmentTeamsBinding
+import com.example.bundesligaapp.viewmodel.HomeViewModel
 import com.example.bundesligaapp.viewmodel.TeamsViewModel
 
 class TeamsFragment : Fragment() {
@@ -62,6 +64,7 @@ class TeamsFragment : Fragment() {
         teamsViewModel.observeTeamsLiveData().observe(viewLifecycleOwner, Observer { teams ->
             Log.d("TeamsFragment", "Teams list size: ${teams.size}")
             teamsAdapter.setTeamList(teams)
+
         })
     }
 

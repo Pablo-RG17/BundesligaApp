@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/ivVenueImage"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_170sdp"
+            android:layout_height="120dp"
             android:scaleType="fitCenter"
             android:src="@color/accent"
             app:layout_constraintEnd_toEndOf="parent"

@@ -49,6 +49,10 @@ dependencies {
     val lcVersion = "2.7.0"
     val roomVersion = "2.4.2"
 
+    //Material Component
+    implementation ("com.google.android.material:material:1.10.0")
+
+
     //Navigation component
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")

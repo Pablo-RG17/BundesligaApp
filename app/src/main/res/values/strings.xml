@@ -9,6 +9,7 @@
     <string name="city_label">City: %s</string>
     <string name="stadium_label">Stadium: %s</string>
     <string name="capacity_label">Capacity: %s</string>
+    <string name="search">Search…</string>
 
     <!--Fragments Labels-->
     <string name="home_fragment">Home</string>
@@ -17,4 +18,6 @@
 
     <!--League description-->
     <string name="league_description">The Bundesliga is the top professional football division in Germany, founded in 1963. It is one of the five major European leagues and runs from August to May. Bayern Munich is the most successful club with 33 titles. Some of the most important classics include "Der Klassiker" (Bayern vs Dortmund) and "Revierderby" (Dortmund vs Schalke 04). The Bundesliga is known for its rich history, competitiveness, and passionate fan base.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.bundesligaapp.R
 import com.example.bundesligaapp.activities.MainActivity
@@ -41,6 +42,7 @@ class HomeFragment : Fragment() {
         viewModel.getRandomEvent()
         observeRandomEvent()
         onMoreInfoClick()
+        onSearchIconClick()
     }
 
     private fun onMoreInfoClick() {
@@ -65,6 +67,13 @@ class HomeFragment : Fragment() {
                 this.randomEvent = event
             }
         })
+    }
+
+
+    private fun onSearchIconClick() {
+        binding.ivSearch.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_searchFragment)
+        }
     }
 
 }
